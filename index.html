@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <form name="calculator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="display" id="display" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" name="one" value="1" onclick="append('1')"></td>
+                <td><input type="button" name="two" value="2" onclick="append('2')"></td>
+                <td><input type="button" name="three" value="3" onclick="append('3')"></td>
+                <td><input type="button" class="operator" name="plus" value="+" onclick="append('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="four" value="4" onclick="append('4')"></td>
+                <td><input type="button" name="five" value="5" onclick="append('5')"></td>
+                <td><input type="button" name="six" value="6" onclick="append('6')"></td>
+                <td><input type="button" class="operator" name="minus" value="-" onclick="append('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="seven" value="7" onclick="append('7')"></td>
+                <td><input type="button" name="eight" value="8" onclick="append('8')"></td>
+                <td><input type="button" name="nine" value="9" onclick="append('9')"></td>
+                <td><input type="button" class="operator" name="times" value="x" onclick="append('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="clear" name="clear" value="c" onclick="clearInput()"></td>
+                <td><input type="button" name="zero" value="0" onclick="append('0')"></td>
+                <td><input type="button" name="doit" value="=" onclick="calculate()"></td>
+                <td><input type="button" class="operator" name="div" value="/" onclick="append('/')"></td>
+
+            </tr>
+        </table>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
